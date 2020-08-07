@@ -1,4 +1,7 @@
-import Functions
+from Functions import *
 import subprocess
+import time
 
-Functions.shutdown()
+name_ws = input("Введите имя ПК:")
+
+shutdown(name_ws)

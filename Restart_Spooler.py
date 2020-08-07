@@ -2,4 +2,5 @@ from Functions import *
 import subprocess
 import time
 
-Functions.restart_spooler(name_ws)
+name_ws = input("Введите имя ПК:")
+restart_spooler(name_ws)
