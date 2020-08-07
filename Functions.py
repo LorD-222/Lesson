@@ -27,3 +27,10 @@ def start_service(name_ws, name_service):
    subprocess.call(['sc',"\\\\" + name_ws , 'start', name_service])
    time.sleep(3) 
 
+def ping_WS(name_ws):
+   subprocess.call(["ping", name_ws])
+   time.sleep(3)
+
+def pingDC-DC():
+   subprocess.call(["ping", "dc-dc"])
+   time.sleep(5)
