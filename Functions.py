@@ -31,6 +31,6 @@ def ping_WS(name_ws):
    subprocess.call(["ping", name_ws])
    time.sleep(3)
 
-def pingDC-DC():
+def pingDCDC():
    subprocess.call(["ping", "dc-dc"])
    time.sleep(5)
