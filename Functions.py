@@ -38,3 +38,7 @@ def pingDCDC():
 def print_install(name_print):
    subprocess.call(['cscript.exe', 'C:\\Windows\\System32\\Printing_Admin_Scripts\\en-US\\prnmngr.vbs', '-ac', '-p',  '\\\\print\\3600 SF ' + name_print])
    time.sleep(4)
+
+def print_install_ws(name_ws,name_print):
+   subprocess.call(['cscript.exe', 'C:\\Windows\\System32\\Printing_Admin_Scripts\\en-US\\prnmngr.vbs', '-ac','-s', '\\\\' + name_ws , '-p', '\\\\print\\3600 SF ' + name_print])
+
