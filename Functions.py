@@ -28,6 +28,7 @@ def start_service(name_ws, name_service):
    time.sleep(3) 
 
 def ping_WS(name_ws):
+   name_ws = input("Введите имя ПК:")
    subprocess.call(["ping", name_ws])
    time.sleep(4)
 
