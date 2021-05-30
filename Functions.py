@@ -10,7 +10,6 @@ def shutdown(name_ws):
    else:
       time.sleep(2)
 
-
 def restart_spooler(name_ws):
    subprocess.call(['sc',"\\\\" + name_ws, 'stop', 'PDF24'])
    time.sleep(3)
@@ -30,10 +29,6 @@ def start_service(name_ws, name_service):
 def ping_WS(name_ws):
    name_ws = input("Введите имя ПК:")
    subprocess.call(["ping", name_ws])
-   time.sleep(4)
-
-def pingDCDC():
-   subprocess.call(["ping", "dc-dc"])
    time.sleep(4)
 
 def print_install(name_print):
